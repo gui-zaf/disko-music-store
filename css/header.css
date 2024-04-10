@@ -1,0 +1,55 @@
+:root {
+    --logo-size: 2em;
+    --nav-link-size: 1.2em;
+    --nav-link-weight: 650;
+    --logo-weight: 700;
+    --glass-header: rgba(248, 247, 250, 0.5);
+    --header-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: var(--page-padding);
+    z-index: 1;
+    background-color: var(--glass-header);
+    backdrop-filter: blur(40px);
+    box-shadow: var(--header-shadow);
+}
+
+nav {
+    width: calc(var(--page-width) - 10rem);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav strong {
+    font-size: var(--logo-size);
+    font-weight: var(--logo-weight);
+}
+
+nav ul {
+    width: 100%;
+    max-width: 40rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--font-standard-color);
+    font-size: var(--nav-link-size);
+    font-weight: var(--nav-link-weight);
+}
+

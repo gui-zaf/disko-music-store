@@ -1,0 +1,44 @@
+:root {
+    --border-radius: 1rem;
+    --banner-title-size: 10rem;
+    --banner-title-font-weight: 700;
+    --banner-subtitle-size: 5rem;
+    --banner-subtitle-font-weight: 400;
+}
+
+.welcome-banner {
+    position: relative;
+    width: 100%;
+    height: 36rem;
+}
+
+.welcome-banner video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: var(--border-radius);
+    pointer-events: none;
+}
+
+.welcome-text {
+    position: absolute;
+    top: 0rem;
+    left: 0;
+    transform: translate(10%, 45%);
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.welcome-text h1 {
+    font-size: var(--banner-title-size);
+    font-weight: var(--banner-title-font-weight);
+    color: var(--background-color);
+}
+
+.welcome-text h2 {
+    font-size: var(--banner-subtitle-size);
+    font-weight: var(--banner-font-weight);
+    color: var(--background-color);
+}
