@@ -1,0 +1,71 @@
+:root {
+    --songs-header-bg-color: #D5DEDE;
+    --songs-title-color: linear-gradient(10deg, rgba(184,139,234,1) 0%, rgb(125, 82, 244) 100%);
+    --songs-subtitle-color: #62AE3D;
+    --songs-title-font-size: 8rem;
+    --songs-subtitle-font-size: 3rem;
+}
+
+.row-adjust {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: var(--page-gap);
+}
+
+.songs-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: var(--page-gap);
+}
+
+.songs-left-side-container {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+
+.songs-header {
+    width: 100%;
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+     margin-bottom: var(--page-gap);/* TODO: Remova essa linha quando você descobrir o bug do gap  */
+    border-radius: var(--border-radius);
+    background-color: var(--songs-header-bg-color);
+}
+
+.songs-header h1 {
+    color: transparent;
+    background: var(--songs-title-color);
+    background-clip: text;
+    font-size: 8rem;
+}
+
+.songs-header p {
+    font-size: var(--songs-subtitle-font-size);
+    font-weight: bold;
+    letter-spacing: 4px;
+    color: var(--songs-subtitle-color);
+}
+
+.songs-left-side-container video {
+    width: 50rem;
+    height: 100%;
+    border-radius: var(--border-radius);
+    object-fit: cover;
+}
+
+.songs-right-side-container {
+    width: 100%;
+}
+
+.songs-right-side-container video {
+    width: 100%;
+    height: 50rem;
+    object-fit: cover;
+    border-radius: var(--border-radius);
+}
