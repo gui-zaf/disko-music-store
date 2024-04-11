@@ -3,7 +3,8 @@
 :root {
     --page-width: 90rem;
     --page-padding: 0.5rem;
-    --header-distance: 3.8rem;
+    --page-gap: 0.5rem;
+    --header-distance: 7rem;
     --background-color: #F8F7FA;
     --font-standard-color: #222708;
 }
@@ -12,6 +13,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
 }
 
 body {
@@ -27,6 +32,9 @@ body {
 }
 
 .page-holder {
+    display: flex;
+    flex-direction: column;
+    gap: var(--page-gap);
     width: 100%;
     max-width: var(--page-width);
     height: 100%;

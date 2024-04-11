@@ -1,0 +1,104 @@
+:root {
+    --about-title-font-size: 9rem;
+    --about-title-container-bg-color: #060A0B;
+    --about-title-container-text-color: #278ECB;
+    --about-subtitle-font-size: 4rem;
+    --about-subtitle-container-bg-color: #BD911B;
+    --about-subtitle-container-text-color: #FFFFFF;
+    --glassmorph-background: radial-gradient(231% 135.8% at 0.9% 2.98%, rgba(255, 255, 255, 0.40) 0%, rgba(255, 255, 255, 0.00) 100%);
+}
+
+.about-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: var(--page-gap);
+}
+
+.about-left-side-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-left-side-container video {
+    width: 28rem;
+    height: 40rem;
+    object-fit: cover;
+    border-radius: var(--border-radius);
+}
+
+.about-left-side-image {
+    margin-top: var(--page-gap);
+    flex: 1;
+    height: 10rem;
+    object-fit: cover;
+    border-radius: var(--border-radius);
+}
+
+.about-right-side-container {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: var(--page-gap);
+}
+
+.about-title-container,
+.about-subtitle-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--border-radius);
+}
+
+.about-title-container {
+    height: 16rem;
+    background-color: var(--about-title-container-bg-color);
+}
+
+.about-subtitle-container {
+    height: 8rem;
+    background-color: var(--about-subtitle-container-bg-color);
+}
+
+.about-title-container h1 {
+    font-size: var(--about-title-font-size);
+    color: var(--about-title-container-text-color);
+}
+
+.about-subtitle-container h2 {
+    font-size: var(--about-subtitle-font-size);
+    color: var(--about-subtitle-container-text-color);
+}
+
+.about-right-side-container-video-holder {
+    position: relative;
+}
+
+.about-right-side-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: var(--border-radius);
+    pointer-events: none;
+}
+
+.glassmorph-about-container {
+    width: 100%;
+    max-width: 40rem;
+    position: absolute;
+    background: var(--glassmorph-background);
+    border: 1px solid rgba(234, 228, 185, 0.289);
+    backdrop-filter: blur(1rem);
+    padding: 2rem;
+    top: 0;
+    left: 0;
+    transform: translate(15%, 60%);
+    border-radius: var(--border-radius);
+}
+
+.about-text {
+    color: var(--about-subtitle-container-text-color);
+    font-size: 3em;
+    font-weight: bold;
+}
