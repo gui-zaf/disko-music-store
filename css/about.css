@@ -1,7 +1,8 @@
 :root {
     --about-title-font-size: 9rem;
     --about-title-container-bg-color: #060A0B;
-    --about-title-container-text-color: #278ECB;
+    --about-title-container-text-color: linear-gradient(263deg, rgb(255, 249, 204) 0%, rgb(175, 125, 255) 100%);
+    ;
     --about-subtitle-font-size: 4rem;
     --about-subtitle-container-bg-color: #BD911B;
     --about-subtitle-container-text-color: #FFFFFF;
@@ -62,8 +63,19 @@
 }
 
 .about-title-container h1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: var(--page-gap);
     font-size: var(--about-title-font-size);
-    color: var(--about-title-container-text-color);
+    background: var(--about-title-container-text-color);
+    color: transparent;
+    background-clip: text;
+}
+
+.about-title-container h1 i {
+    margin-top: 1.2rem;
 }
 
 .about-subtitle-container h2 {

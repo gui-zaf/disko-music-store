@@ -7,6 +7,7 @@
     --header-distance: 7rem;
     --background-color: #F8F7FA;
     --font-standard-color: #222708;
+    --border-radius: 2rem;
 }
 
 * {
@@ -29,6 +30,7 @@ body {
     align-items: center;
     background-color: var(--background-color);
     color: var(--font-standard-color);
+    animation: fade-in-up 1s ease-out;
 }
 
 .page-holder {
